@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
         <meta http-equiv=content-type content="text/html; charset=utf-8" />
@@ -107,7 +107,7 @@
                             <td align=middle width=30><img height=9 
                                                            src="<?php echo ADMIN_IMG_URL;?>menu_icon.gif" width=9></td>
                             <td><a class=menuchild 
-                                   href="__MODULE__/Goods/showlist"
+                                   href="/mvc/shop/index.php/Admin/Goods/showlist"
                                    target=right>产品展示</a></td></tr>
                         <tr height=20>
                             <td align=middle width=30><img height=9 
