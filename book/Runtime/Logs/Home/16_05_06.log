@@ -1,0 +1,81 @@
+[ 2016-05-06T13:24:23+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
+[ 2016-05-06T13:28:08+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
+[ 2016-05-06T13:28:09+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
+[ 2016-05-06T13:28:23+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
+[ 2016-05-06T13:28:24+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
+[ 2016-05-06T13:29:26+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
+[ 2016-05-06T13:29:26+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
+[ 2016-05-06T13:29:27+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
+[ 2016-05-06T13:29:27+08:00 ] 127.0.0.1 /mvc/book/index.php?m=home&c=user&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+ERR: 模板不存在:F:/www/mvc/book/Home/View/User/login.html
+
