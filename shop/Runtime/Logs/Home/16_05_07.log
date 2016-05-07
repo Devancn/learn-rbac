@@ -1,0 +1,18 @@
+[ 2016-05-07T11:41:13+08:00 ] 127.0.0.1 /mvc/shop/index.php/__CONTROLLER__/head.html
+ERR: 无法加载控制器:__CONTROLLER__
+
+[ 2016-05-07T11:41:13+08:00 ] 127.0.0.1 /mvc/shop/index.php/__CONTROLLER__/left.html
+ERR: 无法加载控制器:__CONTROLLER__
+
+[ 2016-05-07T11:41:13+08:00 ] 127.0.0.1 /mvc/shop/index.php/__CONTROLLER__/right.html
+ERR: 无法加载控制器:__CONTROLLER__
+
+[ 2016-05-07T12:01:06+08:00 ] 127.0.0.1 /mvc/shop/index.php/__CONTROLLER__/head.html
+ERR: 无法加载控制器:__CONTROLLER__
+
+[ 2016-05-07T12:01:06+08:00 ] 127.0.0.1 /mvc/shop/index.php/__CONTROLLER__/left.html
+ERR: 无法加载控制器:__CONTROLLER__
+
+[ 2016-05-07T12:01:06+08:00 ] 127.0.0.1 /mvc/shop/index.php/__CONTROLLER__/right.html
+ERR: 无法加载控制器:__CONTROLLER__
+
