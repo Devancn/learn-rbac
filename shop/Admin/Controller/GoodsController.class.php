@@ -9,6 +9,7 @@ namespace Admin\Controller;//声明一个命名空间
 use Model\GoodsModel; //空间类元素引入
 use Think\Controller;
 use Think\Upload;
+use Think\Image;
 class GoodsController extends Controller{
 	//商品列表
 	function showlist1(){
@@ -115,16 +116,26 @@ class GoodsController extends Controller{
 		//两个逻辑：展示表单，收集表单
 		$goods=D('Goods');
 		if(!empty($_POST)){
-			//处理上传的图片附件
+
 			if($_FILES['goods_pic']['error']<4){
+				//A.处理上传的图片附件
 				$cfg=array(
 					'rootPath'      =>  './Public/Uploads/', //保存根路径
 				);
 				$up=new Upload($cfg);//上面需要引入命名空间
 				//uploadOne()方法执行成功后会把附件(在服务器上)的名字和路径等相关信息给我们返回
 				$z=$up->uploadOne($_FILES['goods_pic']);//只上传一个附件图片
+				$bigimg=$up->rootPath.$z["savepath"].$z["savename"];
+				$smallimg=$up->rootPath.$z["savepath"].'small_'.$z["savename"];//小图路径名
+
+				//B.对上传好的图片制作缩略图(默认有等比例缩放效果)
+				$im=new Image();//实例化Image对象
+				$im->open($bigimg);//打开被处理的图片
+				$im->thumb(100,100);//制作缩略图
+				$im->save($smallimg);//保存缩略图到服务器
 				//把上传好的附件存储到数据库里面
-				$_POST['goods_big_img']=$up->rootPath.$z["savepath"].$z["savename"];
+				$_POST['goods_big_img']=ltrim($bigimg,'./');
+				$_POST['goods_small_img']=ltrim($smallimg,'./');
 				//dump($up->getError());
 				//dump($z);
 			}

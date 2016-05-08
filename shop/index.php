@@ -3,6 +3,8 @@
 //框架两种模式：生产、开发
 define('APP_DEBUG',true);//开发(错误提示非常具体)
 //define('APP_DEBUG',false);//生产(错误提示模糊)
+//这个常量是给页面中显示图片的绝对路径,这个是自己定义的
+define('SITE_URL','http://www.dxh.com/mvc/shop/');
 //给静态资源文件访问目录设置常量,方便后期维护
 //Home分组
 define('CSS_URL','/mvc/shop/Public/css/');
