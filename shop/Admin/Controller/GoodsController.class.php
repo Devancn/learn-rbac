@@ -1,8 +1,14 @@
 <?php
+/*
+ * 命名空间与目录没有直接关系
+ * tp框架的设计是目录名字的命名空间在做类文件引入的时候会转化为目录的一部分
+ * 进而获得该类文件
+ * */
 //命名空间
-namespace Admin\Controller;
-use Model\GoodsModel;
+namespace Admin\Controller;//声明一个命名空间
+use Model\GoodsModel; //空间类元素引入
 use Think\Controller;
+use Think\Upload;
 class GoodsController extends Controller{
 	//商品列表
 	function showlist1(){
@@ -109,6 +115,19 @@ class GoodsController extends Controller{
 		//两个逻辑：展示表单，收集表单
 		$goods=D('Goods');
 		if(!empty($_POST)){
+			//处理上传的图片附件
+			if($_FILES['goods_pic']['error']<4){
+				$cfg=array(
+					'rootPath'      =>  './Public/Uploads/', //保存根路径
+				);
+				$up=new Upload($cfg);//上面需要引入命名空间
+				//uploadOne()方法执行成功后会把附件(在服务器上)的名字和路径等相关信息给我们返回
+				$z=$up->uploadOne($_FILES['goods_pic']);//只上传一个附件图片
+				//把上传好的附件存储到数据库里面
+				$_POST['goods_big_img']=$up->rootPath.$z["savepath"].$z["savename"];
+				//dump($up->getError());
+				//dump($z);
+			}
 			//收集表单
 			$z=$goods->add($_POST);
 			if($z){
@@ -139,7 +158,6 @@ class GoodsController extends Controller{
 	function xiugai($goods_id){
 		$goods=D('Goods');
 		//两个逻辑：展示、收集
-		dump($_POST);
 		if(!empty($_POST)){
 			$z=$goods->save($_POST);
 			if($z){

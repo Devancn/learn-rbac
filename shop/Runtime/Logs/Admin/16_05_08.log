@@ -1,0 +1,48 @@
+[ 2016-05-08T15:41:59+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_CSS_URL;?%3EUser_Login.css
+ERR: 非法操作:
+
+[ 2016-05-08T15:41:59+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eadmin.png
+ERR: 非法操作:
+
+[ 2016-05-08T15:41:59+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Euser_botton.gif
+ERR: 非法操作:
+
+[ 2016-05-08T15:42:01+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eadmin.png
+ERR: 非法操作:
+
+[ 2016-05-08T15:42:01+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_CSS_URL;?%3EUser_Login.css
+ERR: 非法操作:
+
+[ 2016-05-08T15:42:01+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Euser_botton.gif
+ERR: 非法操作:
+
+[ 2016-05-08T15:42:02+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_CSS_URL;?%3EUser_Login.css
+ERR: 非法操作:
+
+[ 2016-05-08T15:42:02+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eadmin.png
+ERR: 非法操作:
+
+[ 2016-05-08T15:42:02+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Euser_botton.gif
+ERR: 非法操作:
+
+[ 2016-05-08T15:42:40+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eadmin.png
+ERR: 非法操作:
+
+[ 2016-05-08T15:42:40+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Euser_botton.gif
+ERR: 非法操作:
+
+[ 2016-05-08T16:09:25+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/verifyImg0.48925141728805355
+ERR: 非法操作:verifyImg0.48925141728805355
+
+[ 2016-05-08T16:09:26+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/verifyImg0.7920093515290965
+ERR: 非法操作:verifyImg0.7920093515290965
+
+[ 2016-05-08T16:09:27+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/verifyImg0.9782831925185647
+ERR: 非法操作:verifyImg0.9782831925185647
+
+[ 2016-05-08T16:09:27+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Manager/verifyImg0.19651006242474245
+ERR: 非法操作:verifyImg0.19651006242474245
+
+[ 2016-05-08T16:45:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Goods/tianjia
+ERR: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '' for column 'goods_price' at row 1
+

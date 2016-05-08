@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2016-05-07 21:49:33
+<?php /* Smarty version Smarty-3.1.6, created on 2016-05-08 16:45:28
          compiled from "E:/www/mvc/shop/Admin/View\Goods\tianjia.html" */ ?>
 <?php /*%%SmartyHeaderCode:19629572de13bb9a757-04566111%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c454df474de591ce36207aee39841585b7127a10' => 
     array (
       0 => 'E:/www/mvc/shop/Admin/View\\Goods\\tianjia.html',
-      1 => 1462628960,
+      1 => 1462697018,
       2 => 'file',
     ),
   ),
@@ -60,6 +60,10 @@ User_Login.css" type="text/css" rel="stylesheet" />
                 <tr>
                     <td>商品数量</td>
                     <td><input type="text" name="goods_number" /></td>
+                </tr>
+                <tr>
+                    <td>商品图片</td>
+                    <td><input type="file" name="goods_pic" /></td>
                 </tr>
                 <tr>
                     <td>商品详细描述</td>
