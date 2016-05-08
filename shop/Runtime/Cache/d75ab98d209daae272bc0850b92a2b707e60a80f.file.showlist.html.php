@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2016-05-08 17:57:25
+<?php /* Smarty version Smarty-3.1.6, created on 2016-05-08 20:57:14
          compiled from "E:/www/mvc/shop/Admin/View\Goods\showlist.html" */ ?>
 <?php /*%%SmartyHeaderCode:22833572db6ff449a64-40188551%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd75ab98d209daae272bc0850b92a2b707e60a80f' => 
     array (
       0 => 'E:/www/mvc/shop/Admin/View\\Goods\\showlist.html',
-      1 => 1462701405,
+      1 => 1462712230,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'info' => 0,
     'v' => 0,
+    'pagelist' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -111,7 +112,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                     <?php } ?>
                     <tr>
                         <td colspan="20" style="text-align: center;">
-                            [1]
+                            <?php echo $_smarty_tpl->tpl_vars['pagelist']->value;?>
+
                         </td>
                     </tr>
                 </tbody>

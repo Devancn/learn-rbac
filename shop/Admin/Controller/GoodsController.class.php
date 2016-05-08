@@ -10,6 +10,7 @@ use Model\GoodsModel; //空间类元素引入
 use Think\Controller;
 use Think\Upload;
 use Think\Image;
+use Tools\Page;//这个是自定义的工具类
 class GoodsController extends Controller{
 	//商品列表
 	function showlist1(){
@@ -75,8 +76,20 @@ class GoodsController extends Controller{
 
 	function showlist(){
 		$goods=D('Goods');
+		//实现数据分页效果
+		//1.获得总记录数目
 
+		$total=$goods->count();//sum(),max() min()
+		$per=7;//每页只显示7条数据
+		//2.实现化分页对象
+		$page_obj=new Page($total,$per);
 
+		//3自定义sql语句,获得分页信息
+		$sql="select * from sw_goods order by goods_id desc ".$page_obj->limit;
+		$info=$goods->query($sql);
+
+		//4.获得页码列表
+		$pagelist=$page_obj->fpage();
 		//$goods -> field('goods_name');
 		//$goods -> where('goods_price>1000');
 		//$goods ->limit(10);
@@ -85,7 +98,8 @@ class GoodsController extends Controller{
 		//以上许多方法可以做连贯操作,如下
 		//连贯操作的各个方法没有顺序要求，但select()必须放在最后
 		//$info=$goods -> field('goods_name') -> limit(10) -> order('goods_price desc') -> where('goods_price>1000') -> select();
-		$info=$goods->order('goods_id desc')->select();
+//		$info=$goods->order('goods_id desc')->select();
+		$this -> assign('pagelist',$pagelist);
 		$this -> assign('info',$info);
 		$this -> display();
 	}
