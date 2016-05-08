@@ -46,3 +46,12 @@ ERR: 非法操作:verifyImg0.19651006242474245
 [ 2016-05-08T16:45:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Goods/tianjia
 ERR: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '' for column 'goods_price' at row 1
 
+[ 2016-05-08T21:46:44+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Index/__MDULE__/Manager/logout
+ERR: 非法操作:__MDULE__
+
+[ 2016-05-08T21:47:32+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Index/__MDULE__/Manager/logout
+ERR: 非法操作:__MDULE__
+
+[ 2016-05-08T21:47:42+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Index/__MDULE__/Manager/logout
+ERR: 非法操作:__MDULE__
+

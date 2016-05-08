@@ -13,12 +13,32 @@ class ManagerController extends Controller{
 //			$_POST['captcha']==session('verify_code');
 			$vry=new Verify();
 			if($vry->check($_POST['captcha'])){
-				echo "验证码正确";
+				//用户名和密码校验
+				$manager=new \Model\ManagerModel();
+				//在ManagerModel里面丰富一个checkNamePwd方法,
+				//用户校验用户名和密码，校验成功后把当前管理员的一条记录跾返回
+				//校验失败返回null
+				$info=$manager->checkNamePwd($_POST['admin_user'],$_POST['admin_psd']);
+				if($info){
+					//session持久化用户信息(id/name)，页面中转到后台
+					session('admin_id',$info['mg_id']);
+					session('admin_name',$info['mg_name']);
+					$this->redirect('Index/index');
+				}else{
+					echo "用户名或密码错误";
+				}
 			}else{
 				echo "验证码错误";
 			}
 		}
 		$this->display();
+	}
+
+	//退出系统
+	function logout(){
+		//清除session,同时跳转到登录页面
+		session(null);
+		$this->redirect('login');
 	}
 
 	//输出验证码
