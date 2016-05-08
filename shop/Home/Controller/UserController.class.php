@@ -16,7 +16,21 @@ class UserController extends Controller{
 	}
 	//注册功能
 	function register(){
-		//echo "registering";
+		$user=new \Model\UserModel();
+		//两个逻辑：展示、收集
+		if(!empty($_POST)){
+			//收集表单[$_POST]信息并返回,同时触发表单自动验证,过滤非法字段
+			$shuju=$user->create();
+			if($shuju){//返回实在数据 的时候才进行添加
+				$shuju['user_hobby']=implode(',',$_POST['user_hobby']); //把爱好的信息由array变为String
+				if($user->add($shuju)){
+					$this->redirect('Index/index');
+				}
+			}else{
+//				dump($user->getError());//输出难的错误信息
+				$this->assign('errorInfo',$user->getError());
+			}
+		}
 		$this->display();
 	}
 }

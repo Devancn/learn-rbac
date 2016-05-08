@@ -1,4 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php /* Smarty version Smarty-3.1.6, created on 2016-05-08 12:53:21
+         compiled from "E:/www/mvc/shop/Home/View\User\register.html" */ ?>
+<?php /*%%SmartyHeaderCode:16587572ea730e54969-59216800%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '4e3c4cb66fbc32166cbcd4dcf9abd84deb7d1aa3' => 
+    array (
+      0 => 'E:/www/mvc/shop/Home/View\\User\\register.html',
+      1 => 1462683181,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '16587572ea730e54969-59216800',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_572ea730f3341',
+  'variables' => 
+  array (
+    'errorInfo' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_572ea730f3341')) {function content_572ea730f3341($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta name="Generator" content="YONGDA v1.0" />
@@ -8,12 +33,14 @@
 
         <title>YONGDA商城 - Powered by YongDa</title>
 
-        <link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo @CSS_URL;?>
+style.css" rel="stylesheet" type="text/css" />
 
     </head>
     <body class="index_body">
         <div class="block clearfix" style="position: relative; height: 98px;">
-            <a href="#" name="top"><img class="logo" src="{$smarty.const.IMG_URL}logo.gif"></a>
+            <a href="#" name="top"><img class="logo" src="<?php echo @IMG_URL;?>
+logo.gif"></a>
 
             <div id="topNav" class="clearfix">
                 <div style="float: left;"> 
@@ -55,22 +82,26 @@
             <form id="searchForm" method="get" action="#">
                 <input name="keywords" id="keyword" type="text" />
 
-                <input name="imageField" value=" " class="go" style="cursor: pointer; background: url('{$smarty.const.IMG_URL}sousuo.gif') no-repeat scroll 0% 0% transparent; width: 39px; height: 20px; border: medium none; float: left; margin-right: 15px; vertical-align: middle;" type="submit" />
+                <input name="imageField" value=" " class="go" style="cursor: pointer; background: url('<?php echo @IMG_URL;?>
+sousuo.gif') no-repeat scroll 0% 0% transparent; width: 39px; height: 20px; border: medium none; float: left; margin-right: 15px; vertical-align: middle;" type="submit" />
 
             </form>
         </div>
         <div class="blank5"></div>
         <div class="header_bg_b">
             <div class="f_l" style="padding-left: 10px;">
-                <img src="{$smarty.const.IMG_URL}biao6.gif" />
+                <img src="<?php echo @IMG_URL;?>
+biao6.gif" />
                 北京市区，现在下单(截至次日00:30已出库)，<b>明天上午(9-14点)</b>送达 <b>免运费火热进行中！</b>
 
             </div>
             <div class="f_r" style="padding-right: 10px;">
-                <img style="vertical-align: middle;" src="{$smarty.const.IMG_URL}biao3.gif">
+                <img style="vertical-align: middle;" src="<?php echo @IMG_URL;?>
+biao3.gif">
                     <span class="cart" id="ECS_CARTINFO">
                         <a href="#" title="查看购物车">您的购物车中有 0 件商品，总计金额 ￥0.00元。</a></span>
-                    <a href="#"><img style="vertical-align: middle;" src="{$smarty.const.IMG_URL}biao7.gif"></a>
+                    <a href="#"><img style="vertical-align: middle;" src="<?php echo @IMG_URL;?>
+biao7.gif"></a>
 
             </div>
         </div>
@@ -93,7 +124,8 @@
                 <div class="usBox">
                     <div class="usBox_2 clearfix">
                         <div class="logtitle3"></div>
-                        <form id="yw0" action="{$smarty.const.__SELF__}" method="post">                <table cellpadding="5" cellspacing="3" style="text-align:left; width:100%; border:0;">
+                        <form id="yw0" action="<?php echo @__SELF__;?>
+" method="post">                <table cellpadding="5" cellspacing="3" style="text-align:left; width:100%; border:0;">
                                 <tbody>
                                     <tr>
                                         <td style="width:13%; text-align: right;"><label for="User_username" class="required">用户名 
@@ -102,7 +134,8 @@
 
                                         <td style="width:87%;">
                                             <input class="inputBg" size="25" name="username" id="User_username" type="text" value="" />
-                                            <span style="color:red;">{$errorInfo.username|default:""}</span>
+                                            <span style="color:red;"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['username'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -112,14 +145,16 @@
 
                                         <td>
                                             <input class="inputBg" size="25" name="password" id="User_password" type="password" value="" />
-                                            <span style="color:red;">{$errorInfo.password|default:""}</span>
+                                            <span style="color:red;"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['password'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="right"><label for="User_password2">密码确认</label></td>
                                         <td>
                                             <input class="inputBg" size="25" name="password2" id="User_password2" type="password" />
-                                            <span style="color:red;">{$errorInfo.password2|default:""}</span>
+                                            <span style="color:red;"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['password2'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
                                         </td>
 
                                     </tr>
@@ -127,7 +162,8 @@
                                         <td align="right"><label for="User_user_email">邮箱</label></td>
                                         <td>
                                             <input class="inputBg" size="25" name="user_email" id="User_user_email" type="text" value="" />
-                                            <span style="color:red;">{$errorInfo.user_email|default:""}</span>
+                                            <span style="color:red;"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['user_email'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -135,7 +171,8 @@
                                         <td align="right"><label for="User_user_qq">qq号码</label></td>
                                         <td>
                                             <input class="inputBg" size="25" name="user_qq" id="User_user_qq" type="text" value="" />
-                                            <span style="color:red;">{$errorInfo.user_qq|default:""}</span>
+                                            <span style="color:red;"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['user_qq'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -170,7 +207,8 @@
                                                 <option value="4">高中</option>
                                                 <option value="5">大学</option>
                                             </select>
-                                            <span style="color:red;">{$errorInfo.user_xueli|default:""}</span>
+                                            <span style="color:red;"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['user_xueli'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
                                             <div class="errorMessage" id="User_user_xueli_em_" style="display:none"></div>                            </td>
                                     </tr>
                                     <tr>
@@ -188,7 +226,8 @@
                                             <input id="User_user_hobby_3" value="4" type="checkbox" name="user_hobby[]" />
                                             <label for="User_user_hobby_3">棒球</label>
                                             </span>
-                                            <span style="color:red;">{$errorInfo.user_hobby|default:""}</span>
+                                            <span style="color:red;"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['errorInfo']->value['user_hobby'])===null||$tmp==='' ? '' : $tmp);?>
+</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -221,7 +260,8 @@
 
         <div class="blank"></div>
         <div class="block">
-            <a href="#" target="_blank" title="YONGDA商城"><img alt="YONGDA商城" src="{$smarty.const.IMG_URL}di.jpg"></a>
+            <a href="#" target="_blank" title="YONGDA商城"><img alt="YONGDA商城" src="<?php echo @IMG_URL;?>
+di.jpg"></a>
             <div class="blank"></div>
         </div>
 
@@ -278,10 +318,12 @@
         <div id="bottomNav" class="box block">
             <div class="box_1">
                 <div class="links clearfix"> 
-                    <a href="#" target="_blank" title="YONGDA商城"><img src="{$smarty.const.IMG_URL}ecmoban_link.jpg" alt="YONGDA商城" border="0"></a>
+                    <a href="#" target="_blank" title="YONGDA商城"><img src="<?php echo @IMG_URL;?>
+ecmoban_link.jpg" alt="YONGDA商城" border="0"></a>
 
                     <a href="#" target="_blank" title="YONGDA 网上商店管理系统">
-                        <img src="{$smarty.const.IMG_URL}yongda_logo.gif" alt="YONGDA 网上商店管理系统" border="0" />
+                        <img src="<?php echo @IMG_URL;?>
+yongda_logo.gif" alt="YONGDA 网上商店管理系统" border="0" />
                     </a>
 
 
@@ -323,4 +365,4 @@
         </div>
 
     </body>
-</html>
+</html><?php }} ?>

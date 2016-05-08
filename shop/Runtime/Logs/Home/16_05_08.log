@@ -1,0 +1,30 @@
+[ 2016-05-08T10:40:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20IMG_URL;?%3Elogo.gif
+ERR: 非法操作:
+
+[ 2016-05-08T10:40:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20CSS_URL;?%3Estyle.css
+ERR: 非法操作:
+
+[ 2016-05-08T10:40:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20IMG_URL;?%3Ebiao6.gif
+ERR: 非法操作:
+
+[ 2016-05-08T10:40:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20IMG_URL;?%3Ebiao3.gif
+ERR: 非法操作:
+
+[ 2016-05-08T10:40:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20IMG_URL;?%3Eecmoban_link.jpg
+ERR: 非法操作:
+
+[ 2016-05-08T10:40:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20IMG_URL;?%3Edi.jpg
+ERR: 非法操作:
+
+[ 2016-05-08T10:40:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20IMG_URL;?%3Eyongda_logo.gif
+ERR: 非法操作:
+
+[ 2016-05-08T10:40:49+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20IMG_URL;?%3Esousuo.gif
+ERR: 非法操作:
+
+[ 2016-05-08T10:40:54+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/%3C?php%20echo%20IMG_URL;?%3Ebiao7.gif
+ERR: 非法操作:
+
+[ 2016-05-08T10:54:04+08:00 ] 127.0.0.1 /mvc/shop/index.php/User/register
+ERR: Syntax Error in template "E:/www/mvc/shop/Home/View\User\register.html"  on line 96 "&lt;form id=&quot;yw0&quot; action=&quot;{smarty.const.__SELF__}&quot; method=&quot;post&quot;&gt;                &lt;table cellpadding=&quot;5&quot; cellspacing=&quot;3&quot; style=&quot;text-align:left; width:100%; border:0;&quot;&gt;"  - Unexpected ".", expected one of: "}" , " "
+
