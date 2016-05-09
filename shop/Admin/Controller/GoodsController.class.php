@@ -6,7 +6,7 @@
  * */
 //命名空间
 namespace Admin\Controller;//声明一个命名空间
-use Model\GoodsModel; //空间类元素引入
+//use Model\GoodsModel; //空间类元素引入
 use Think\Controller;
 use Think\Upload;
 use Think\Image;
@@ -83,7 +83,6 @@ class GoodsController extends Controller{
 		$per=7;//每页只显示7条数据
 		//2.实现化分页对象
 		$page_obj=new Page($total,$per);
-
 		//3自定义sql语句,获得分页信息
 		$sql="select * from sw_goods order by goods_id desc ".$page_obj->limit;
 		$info=$goods->query($sql);
