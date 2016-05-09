@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2016-05-09 21:06:09
+<?php /* Smarty version Smarty-3.1.6, created on 2016-05-09 22:01:25
          compiled from "E:/www/mvc/shop/Admin/View\Index\left.html" */ ?>
 <?php /*%%SmartyHeaderCode:8956572d68a540c2f0-76022888%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '13bacb432427d4c29b2af970c8561e8aa991106f' => 
     array (
       0 => 'E:/www/mvc/shop/Admin/View\\Index\\left.html',
-      1 => 1462799169,
+      1 => 1462802465,
       2 => 'file',
     ),
   ),
@@ -91,7 +91,10 @@ $_smarty_tpl->tpl_vars['val']->_loop = true;
                         <tr height=20>
                             <td align=middle width=30><img height=9 src="<?php echo @ADMIN_IMG_URL;?>
 menu_icon.gif" width=9></td>
-                            <td><a class=menuchild href="#" target=main><?php echo $_smarty_tpl->tpl_vars['val']->value['auth_name'];?>
+                            <td><a class=menuchild href="<?php echo @__MODULE__;?>
+/<?php echo $_smarty_tpl->tpl_vars['val']->value['auth_c'];?>
+/<?php echo $_smarty_tpl->tpl_vars['val']->value['auth_a'];?>
+" target="right"><?php echo $_smarty_tpl->tpl_vars['val']->value['auth_name'];?>
 </a></td>
                         </tr>
                         <?php }?>

@@ -44,7 +44,7 @@
                         {if $val.auth_pid===$v.auth_id}
                         <tr height=20>
                             <td align=middle width=30><img height=9 src="{$smarty.const.ADMIN_IMG_URL}menu_icon.gif" width=9></td>
-                            <td><a class=menuchild href="#" target=main>{$val.auth_name}</a></td>
+                            <td><a class=menuchild href="{$smarty.const.__MODULE__}/{$val.auth_c}/{$val.auth_a}" target="right">{$val.auth_name}</a></td>
                         </tr>
                         {/if}
                         {/foreach}

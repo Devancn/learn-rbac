@@ -11,6 +11,9 @@ use Think\Controller;
 class RoleController extends Controller{
 	//列表展示
 	function showlist(){
+		//获得角色数据
+		$info=D('Role')->select();
+		$this->assign("info",$info);
 		$this->display();
 	}
 }
