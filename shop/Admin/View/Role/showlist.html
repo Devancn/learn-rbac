@@ -44,7 +44,7 @@
                     <tr id="product1">
                         <td>{$v.role_id}</td>{*$v@iteration是从1开始的序号*}
                         <td>{$v.role_name}</td>
-                        <td><a href="">分配权限</a></td>
+                        <td><a href="{$smarty.const.__CONTROLLER__}/distribute/role_id/{$v.role_id}">分配权限</a></td>
                         <td><a href="">修改</a></td>
                         <td><a href="javascript:;" onclick="delete_product(1)">删除</a></td>
                     </tr>
