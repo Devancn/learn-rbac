@@ -14,4 +14,5 @@ define('JS_URL','/mvc/shop/Public/js/');
 define('ADMIN_CSS_URL','/mvc/shop/Admin/Public/css/');
 define('ADMIN_IMG_URL','/mvc/shop/Admin/Public/images/');
 //引入框架的接口文件
+//
 include '../ThinkPHP/ThinkPHP.php';
