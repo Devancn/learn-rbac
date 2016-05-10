@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2016-05-09 22:12:50
+<?php /* Smarty version Smarty-3.1.6, created on 2016-05-10 22:08:47
          compiled from "E:/www/mvc/shop/Admin/View\Role\showlist.html" */ ?>
 <?php /*%%SmartyHeaderCode:23849573093b23b8984-82947946%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '02ed207fadbe9eac08c72a4b3aff2a897ed55a83' => 
     array (
       0 => 'E:/www/mvc/shop/Admin/View\\Role\\showlist.html',
-      1 => 1462803167,
+      1 => 1462889287,
       2 => 'file',
     ),
   ),
@@ -83,7 +83,9 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 </td>
                         <td><?php echo $_smarty_tpl->tpl_vars['v']->value['role_name'];?>
 </td>
-                        <td><a href="">分配权限</a></td>
+                        <td><a href="<?php echo @__CONTROLLER__;?>
+/distribute/role_id/<?php echo $_smarty_tpl->tpl_vars['v']->value['role_id'];?>
+">分配权限</a></td>
                         <td><a href="">修改</a></td>
                         <td><a href="javascript:;" onclick="delete_product(1)">删除</a></td>
                     </tr>

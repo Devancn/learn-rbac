@@ -79,3 +79,6 @@ ERR: 无法加载控制器:Auth
 [ 2016-05-09T22:09:41+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Role/showlist
 ERR: Syntax Error in template "E:/www/mvc/shop/Admin/View\Role\showlist.html"  on line 39 "&lt;td&gt;{$info.}&lt;/td&gt;"  - Unexpected "}", expected one of: "{" , "$" , "identifier" , INTEGER
 
+[ 2016-05-09T22:14:21+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Role/tianjia
+ERR: 非法操作:tianjia
+

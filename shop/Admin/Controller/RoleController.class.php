@@ -19,18 +19,26 @@ class RoleController extends Controller{
 
 	//分配权限
 	function distribute($role_id){
+		$role=new \Model\RoleModel();
 		//两个逻辑：展示、收集
 		//查询被分配权限的角色信息
 		if(!empty($_POST)){
-			dump($_POST);
+			//dump($_POST);//role_id ,auth_id(array);
+			//收集好设置的权限，并制作为数据表要求格式 并存储
+			$z=$role->saveAuth($_POST['role_id'],$_POST['auth_id']);
+			if($z){
+				$this->redirect('showlist',array(),2,'分配权限成功');
+			}else{
+				$this->redirect('distribute',array('role_id'=>$role_id),2,'分配权限失败');
+			}
 		}else{
-			$role_info=D('Role')->find($role_id);
+			//查询分配权限的角色信息
+			$role_info=$role->find($role_id);
 
 			//获得可供选取分配的权限信息
 			//以后用递归做 无限分类
 			$auth_infoA=D('Auth')->where('auth_level=0')->select();//父级权限
 			$auth_infoB=D('Auth')->where('auth_level=1')->select();//子级权限
-
 
 			$this->assign('auth_infoA',$auth_infoA);
 			$this->assign('auth_infoB',$auth_infoB);
