@@ -16,11 +16,12 @@ class AuthModel extends Model{
 		//当前战略:根据已有信息生成一个新记录(字段内容不全面)
 		//通过算法计算auth_path和auth_level
 		//再通过一个updata语句把path和level给更新于是新记录里面
+		//此时字段内容完整
 		//1.根据已有$data(name/pid/controller/action)数据生成一条新记录出来
 		$newid=$this->add($data);
 		//2.制作auth_path
 		//(1)顶级权限 auth_path === 新记录主键id值
-		if($data['auth_id']==0){
+		if($data['auth_pid']==0){
 			$path=$newid;
 		}else{
 			//(2)非顶级权限,根据pid获得父级权限信息，进而获得其"全路径"
@@ -28,7 +29,11 @@ class AuthModel extends Model{
 			$pinfo=$this->find($data['auth_id']);
 			$path=$pinfo['auth_path']."-".$newid;
 		}
-		dump($path);
 		//3.制作auth_level
+		//全路径里面"-"数量就是auth_level的值
+		//substr_count()计算一个字符串中出现的目标内容次数
+		$level=substr_count($path,"-");
+		$sql="update sw_auth set auth_path='$path',auth_level='$level' where auth_id='$newid'";
+		return $this->execute($sql);
 	}
 }

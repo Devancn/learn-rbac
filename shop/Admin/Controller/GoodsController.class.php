@@ -7,11 +7,11 @@
 //命名空间
 namespace Admin\Controller;//声明一个命名空间
 //use Model\GoodsModel; //空间类元素引入
-use Think\Controller;
+use Tools\AdminController;
 use Think\Upload;
 use Think\Image;
 use Tools\Page;//这个是自定义的工具类
-class GoodsController extends Controller{
+class GoodsController extends AdminController{
 	//商品列表
 	function showlist1(){
 		//使用GoodsModel

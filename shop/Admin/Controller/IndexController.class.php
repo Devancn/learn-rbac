@@ -1,8 +1,8 @@
 <?php
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
-class IndexController extends Controller{
+use Tools\AdminController;
+class IndexController extends AdminController{
 	//头部
 	function head(){
 		$this ->display();

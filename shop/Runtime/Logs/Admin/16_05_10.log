@@ -37,3 +37,6 @@ ERR: SQLSTATE[HY000]: General error
 [ 2016-05-10T23:11:24+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Role/distribute/role_id/10
 ERR: Think\Model:excute方法不存在！
 
+[ 2016-05-10T23:20:04+08:00 ] 127.0.0.1 /mvc/shop/index.php/Admin/Index/left
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+

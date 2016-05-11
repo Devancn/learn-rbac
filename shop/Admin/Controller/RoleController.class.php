@@ -6,9 +6,9 @@
  * */
 //命名空间
 namespace Admin\Controller;//声明一个命名空间
-use Think\Controller;
+use Tools\AdminController;
 //角色控制器
-class RoleController extends Controller{
+class RoleController extends AdminController{
 	//列表展示
 	function showlist(){
 		//获得角色数据

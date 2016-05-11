@@ -1,10 +1,10 @@
 <?php
 //命名空间
 namespace Admin\Controller;
-use Think\Controller;
+use Tools\AdminController;
 use Think\Verify;//空间类元素引入
 
-class ManagerController extends Controller{
+class ManagerController extends AdminController{
 	//管理员登录系统
 	function login(){
 		//两个逻辑：展示、收集
