@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2016-05-10 12:56:51
+<?php /* Smarty version Smarty-3.1.6, created on 2016-05-11 09:03:02
          compiled from "F:/www/mvc/shop/Admin/View\Role\distribute.html" */ ?>
 <?php /*%%SmartyHeaderCode:2442357315c5e56f264-80240143%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a09ba2eacd16b1a2aa68d11e20d2c1dad6152556' => 
     array (
       0 => 'F:/www/mvc/shop/Admin/View\\Role\\distribute.html',
-      1 => 1462856172,
+      1 => 1462928568,
       2 => 'file',
     ),
   ),
@@ -22,6 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'role_info' => 0,
     'auth_infoA' => 0,
     'v' => 0,
+    'have_authids' => 0,
     'auth_infoB' => 0,
     'val' => 0,
   ),
@@ -70,9 +71,13 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
                         }
                     </style>
                     
-                    <td style="width:18%" class="td"><input type="checkbox" name="auth_id[]" id="check<?php echo $_smarty_tpl->tpl_vars['v']->value['auth_id'];?>
+                    <td style="width:18%" class="td">
+                        <input type="checkbox" name="auth_id[]" id="check<?php echo $_smarty_tpl->tpl_vars['v']->value['auth_id'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['v']->value['auth_id'];?>
-"><label for="check<?php echo $_smarty_tpl->tpl_vars['v']->value['auth_id'];?>
+"
+                               <?php if (in_array($_smarty_tpl->tpl_vars['v']->value['auth_id'],$_smarty_tpl->tpl_vars['have_authids']->value)){?> checked='checked'<?php }?>
+                        >
+                        <label for="check<?php echo $_smarty_tpl->tpl_vars['v']->value['auth_id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['v']->value['auth_name'];?>
 </label></td>
                     <td class="td">
@@ -86,7 +91,9 @@ $_smarty_tpl->tpl_vars['val']->_loop = true;
                         <?php if ($_smarty_tpl->tpl_vars['val']->value['auth_pid']===$_smarty_tpl->tpl_vars['v']->value['auth_id']){?>
                         <div style="width: 200px;float: left"><input type="checkbox" name="auth_id[]" id="check<?php echo $_smarty_tpl->tpl_vars['val']->value['auth_id'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['val']->value['auth_id'];?>
-"><label for="check<?php echo $_smarty_tpl->tpl_vars['val']->value['auth_id'];?>
+"
+                           <?php if (in_array($_smarty_tpl->tpl_vars['val']->value['auth_id'],$_smarty_tpl->tpl_vars['have_authids']->value)){?> checked='checked'<?php }?>
+                        ><label for="check<?php echo $_smarty_tpl->tpl_vars['val']->value['auth_id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['val']->value['auth_name'];?>
 </label></div>
                         <?php }?>

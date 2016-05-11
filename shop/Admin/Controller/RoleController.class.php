@@ -35,11 +35,16 @@ class RoleController extends Controller{
 			//查询分配权限的角色信息
 			$role_info=$role->find($role_id);
 
+			//查询当前角色已经拥有的权限
+
+			$have_authids=$role_info['role_auth_ids'];//例如:"101,103,104";
+			$have_authids=explode(",",$have_authids);//字符串转为数组,使得判断更严谨
 			//获得可供选取分配的权限信息
 			//以后用递归做 无限分类
 			$auth_infoA=D('Auth')->where('auth_level=0')->select();//父级权限
 			$auth_infoB=D('Auth')->where('auth_level=1')->select();//子级权限
 
+			$this->assign('have_authids',$have_authids);
 			$this->assign('auth_infoA',$auth_infoA);
 			$this->assign('auth_infoB',$auth_infoB);
 			$this->assign('role_info',$role_info);

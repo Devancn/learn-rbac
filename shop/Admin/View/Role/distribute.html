@@ -30,11 +30,17 @@
                         }
                     </style>
                     {/literal}
-                    <td style="width:18%" class="td"><input type="checkbox" name="auth_id[]" id="check{$v.auth_id}" value="{$v.auth_id}"><label for="check{$v.auth_id}">{$v.auth_name}</label></td>
+                    <td style="width:18%" class="td">
+                        <input type="checkbox" name="auth_id[]" id="check{$v.auth_id}" value="{$v.auth_id}"
+                               {if in_array($v.auth_id,$have_authids)} checked='checked'{/if}
+                        >
+                        <label for="check{$v.auth_id}">{$v.auth_name}</label></td>
                     <td class="td">
                         {foreach $auth_infoB as $key => $val}
                         {if $val.auth_pid === $v.auth_id}
-                        <div style="width: 200px;float: left"><input type="checkbox" name="auth_id[]" id="check{$val.auth_id}" value="{$val.auth_id}"><label for="check{$val.auth_id}">{$val.auth_name}</label></div>
+                        <div style="width: 200px;float: left"><input type="checkbox" name="auth_id[]" id="check{$val.auth_id}" value="{$val.auth_id}"
+                           {if in_array($val.auth_id,$have_authids)} checked='checked'{/if}
+                        ><label for="check{$val.auth_id}">{$val.auth_name}</label></div>
                         {/if}
                         {/foreach}
                     </td>
