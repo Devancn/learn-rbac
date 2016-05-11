@@ -21,7 +21,8 @@ class AuthController extends Controller{
 		$auth=new \Model\AuthModel();
 		//两个逻辑:展示、收集
 		if(!empty($_POST)){
-			dump($_POST);
+//			dump($_POST);//只有4个信息name,pid,controller,action
+			$auth->saveData($_POST);//通过算法制作auth_path和auth_level,并实现整条记录的写入
 		}else{
 			//获得上级(顶级)权限信息
 			$auth_infoA=$auth->where('auth_level=0')->select();
