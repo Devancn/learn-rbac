@@ -93,16 +93,36 @@
                 <div class="usBox">
                     <div class="usBox_2 clearfix">
                         <div class="logtitle3"></div>
-                        <form id="yw0" action="{$smarty.const.__SELF__}" method="post">                <table cellpadding="5" cellspacing="3" style="text-align:left; width:100%; border:0;">
+                        <form id="yw0" action="{$smarty.const.__SELF__}" method="post">
+                            <table cellpadding="5" cellspacing="3" style="text-align:left; width:100%; border:0;">
                                 <tbody>
+                                <script type="text/javascript">
+                                    var urlpath="{$smarty.const.__CONTROLLER__}";
+                                    //ajax无刷新方式校验用户名
+                                    function checkname(){
+                                        //1)获取被检验的用户名信息
+                                        var nm=document.getElementById('User_username').value;
+                                        //2)ajax抓取到用户名传递给服务器端校验
+                                        var xhr=new XMLHttpRequest();
+                                        xhr.onreadystatechange=function(){
+                                            if(xhr.readyState==4){
+                                                document.getElementById('namecheck').innerHTML=xhr.responseText;
+                                            }
+                                        };
+                                        //tp框架作用模式：分组/控制器/操作方法
+                                        xhr.open('get',urlpath+'/checkNM/name/'+nm);
+                                        xhr.send(null);
+                                    }
+                                </script>
                                     <tr>
                                         <td style="width:13%; text-align: right;"><label for="User_username" class="required">用户名 
                                         <span class="required">*</span></label>
                                         </td>
 
                                         <td style="width:87%;">
-                                            <input class="inputBg" size="25" name="username" id="User_username" type="text" value="" />
-                                            <span style="color:red;">{$errorInfo.username|default:""}</span>
+                                            <input class="inputBg" size="25" name="username" id="User_username" type="text" value="" onblur="checkname()"
+                                            />
+                                            <span id="namecheck" >{$errorInfo.username|default:""}</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -121,7 +141,6 @@
                                             <input class="inputBg" size="25" name="password2" id="User_password2" type="password" />
                                             <span style="color:red;">{$errorInfo.password2|default:""}</span>
                                         </td>
-
                                     </tr>
                                     <tr>
                                         <td align="right"><label for="User_user_email">邮箱</label></td>

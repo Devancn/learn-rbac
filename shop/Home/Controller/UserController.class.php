@@ -33,4 +33,15 @@ class UserController extends Controller{
 		}
 		$this->display();
 	}
+
+	//用户名检验
+	function checkNM($name){
+		$info=D('User')->where("username='$name'")->find();
+		if($info){
+			echo "<span style='color:tomato'>用户名已经存在，请换一个</span>";
+		}else{
+			echo "<span style='color:green'>恭喜，可以使用此名字</span>";
+		}
+		exit;
+	}
 }
